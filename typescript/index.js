@@ -112,3 +112,19 @@ let miaFerrari = {
 };
 console.log(miaFerrari);
 console.log(miaFerrari.suv);
+let utentefinto = [
+    {
+        id: 6795,
+        name: "Emanuela",
+        username: "itsemanuela_",
+        email: "emanuela_carrubba_@hotmail.com",
+        married: false,
+        smooking: false,
+        favnumber: 5,
+        address: {
+            street: "Corso Italia",
+            city: "Salerno",
+            zipcode: "84012",
+        },
+    },
+];

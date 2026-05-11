@@ -206,3 +206,60 @@ let miaFerrari: ferrari = {
 };
 console.log(miaFerrari);
 console.log(miaFerrari.suv);
+
+//18) Cosa sono i Generics in TypeScript?
+
+//I Generics sono dei "placeholder" di dati che andranno poi sostituiti dai valori di tipo. Si inserisocno tra due apici <> per definire il valore del dato all'inizio della dichiarazione della variabile. Lasciamo il "posto vuoto" per quel dato che poi andremo a sosituire quando effettivamente avremo bisogno di scrivere il codice.
+
+//19) È possibile avere più tipi generici in un'interfaccia?
+//In un'interfaccia possiamo avere un numero indefinito di tipi generici, li inseriamo tra gli apici e andranno a deifnire i nostri valori. Possiamo in questo modo concatenare diversi tipi di valori: stringhe|numeri... booleani|stringhe.. ecc!
+//Ci torna utile soprattutto quando otteniamo il json da una chiamata API che ha diversi tipi di dati.
+
+//20) Crea un'interfaccia generica per una risposta API.
+
+//mio json {
+// "id": 1,
+// "name": "Leanne Graham",
+//"username": "Bret",
+//"email": "Sincere@april.biz",
+// "address": {
+//   "street": "Kulas Light",
+//   "suite": "Apt. 556",
+//  "city": "Gwenborough",
+//  "zipcode": "92998-3874",
+// "geo": {
+//   "lat": "-37.3159",
+// "lng": "81.1496"
+//}
+
+interface utenteApi {
+  id: number;
+  name: string;
+  username: string;
+  email: string;
+  married: boolean;
+  smooking: boolean;
+  favnumber: number;
+  address: {
+    street: string;
+    city: string;
+    zipcode: string;
+  };
+}
+
+let utentefinto: Array<utenteApi> = [
+  {
+    id: 6795,
+    name: "Emanuela",
+    username: "itsemanuela_",
+    email: "emanuela_carrubba_@hotmail.com",
+    married: false,
+    smooking: false,
+    favnumber: 5,
+    address: {
+      street: "Corso Italia",
+      city: "Salerno",
+      zipcode: "84012",
+    },
+  },
+];
