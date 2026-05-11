@@ -86,3 +86,29 @@ const classe = [
 ];
 console.log(classe);
 console.log(classe[2]);
+let autonuova = {
+    modello: "fiat",
+    numeroporte: 4,
+    annouscita: 2020,
+    moderna: true,
+};
+let auto1 = {
+    modello: "opel",
+    numeroporte: 5,
+    annouscita: 2015,
+    moderna: true,
+    assicurazione: true,
+};
+console.log(auto1);
+console.log(auto1.modello);
+console.log(auto1.moderna);
+let miaFerrari = {
+    modello: "Purosangue",
+    numeroporte: 4,
+    annouscita: 2024,
+    moderna: true,
+    assicurazione: true,
+    suv: true,
+};
+console.log(miaFerrari);
+console.log(miaFerrari.suv);

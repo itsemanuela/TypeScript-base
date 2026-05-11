@@ -161,3 +161,48 @@ const classe: studente[] = [
 ];
 console.log(classe);
 console.log(classe[2]);
+
+interface veicolo {
+  modello: string;
+  numeroporte: number;
+  annouscita: number;
+  moderna: boolean;
+}
+
+let autonuova: veicolo = {
+  modello: "fiat",
+  numeroporte: 4,
+  annouscita: 2020,
+  moderna: true,
+};
+
+interface auto extends veicolo {
+  assicurazione: boolean;
+}
+
+let auto1: auto = {
+  modello: "opel",
+  numeroporte: 5,
+  annouscita: 2015,
+  moderna: true,
+  assicurazione: true,
+};
+console.log(auto1);
+console.log(auto1.modello);
+console.log(auto1.moderna);
+
+interface ferrari extends veicolo {
+  assicurazione: boolean;
+  suv: boolean;
+}
+
+let miaFerrari: ferrari = {
+  modello: "Purosangue",
+  numeroporte: 4,
+  annouscita: 2024,
+  moderna: true,
+  assicurazione: true,
+  suv: true,
+};
+console.log(miaFerrari);
+console.log(miaFerrari.suv);
