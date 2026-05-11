@@ -263,3 +263,6 @@ let utentefinto: Array<utenteApi> = [
     },
   },
 ];
+console.log(utentefinto);
+console.log(utentefinto[0].smooking);
+console.log(utentefinto[0].address.city);
