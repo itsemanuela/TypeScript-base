@@ -18,3 +18,9 @@ const sum = (a, b) => {
 };
 console.log(sum(4, 5));
 //:number mi speicifica che il valore di ritorno sarà un numero
+//5) Crea una funzione che accetti un prezzo e restituisca il prezzo con IVA (22%). Usa i tipi appropriati.
+const calcolo = (prezzo) => {
+    return prezzo * 1.22;
+};
+const prezzofinale = calcolo(200);
+console.log("Il prezzo finale con IVA è di" + " " + prezzofinale);
